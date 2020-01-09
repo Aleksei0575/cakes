@@ -1,0 +1,172 @@
+.reviews {
+  padding-top: 95px;
+  position: relative;
+
+  background-image:
+   url("../img/reviews-left-img.png"),
+   url("../img/reviews-right-img.png");
+  background-size: 549px 148px, 549px 148px;
+  background-position: top 0 left 0, top 0 right 0;
+  background-repeat: no-repeat;
+
+  h2 {
+    @include reset;
+    @include font(41, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    width: 175px;
+    margin: 0 auto;
+    padding-bottom: 49px;
+  }
+}
+
+.reviews__container {
+  margin: 0 auto;
+}
+
+.reviews__slider {
+  width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reviews__wrapper {
+  width: 630px;
+  overflow: hidden;
+}
+
+.reviews__block {
+  //padding: 10px 5px 15px 5px;
+  width: 614px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  .reviews__image {
+    width: 209px;
+    align-self: center;
+  }
+
+  .reviews__content {
+    width: 355px;
+
+    h3 {
+      @include reset;
+      @include font(27, 24);
+      padding-bottom: 5px;
+    }
+
+    span {
+      display: block;
+      padding-bottom: 23px;
+    }
+
+    p {
+      @include reset;
+      @include font(18.5, 24.56);
+
+      a {
+        @include font(16, 25);
+        padding-left: 8px;
+        font-style: italic;
+        color: $dark-pink;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.reviews__control {
+  position: absolute;
+  top: 50%;
+  width: 21px;
+  font-size: 0;
+
+  &--prev {
+    left: -52px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 20;
+      left: 0;
+      top: -2px;
+      transform: rotate(-45deg);
+      display: block;
+      width: 11px;
+      height: 1px;
+      background: $dark-pink;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 20;
+      left: 0;
+      top: 6px;
+      transform: rotate(45deg);
+      display: block;
+      width: 11px;
+      height: 1px;
+      background: $dark-pink;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background: $black;
+      }
+    }
+  }
+
+  &--next {
+    right: -52px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 20;
+      left: 0;
+      top: -2px;
+      transform: rotate(45deg);
+      display: block;
+      width: 11px;
+      height: 1px;
+      background: $dark-pink;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 20;
+      left: 0;
+      top: 6px;
+      transform: rotate(-45deg);
+      display: block;
+      width: 11px;
+      height: 1px;
+      background: $dark-pink;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background: $black;
+      }
+    }
+  }
+}
+
+.reviews__indicator {
+  @include font(18, 25);
+  position: absolute;
+  bottom: -19px;
+  right: -4px;
+}

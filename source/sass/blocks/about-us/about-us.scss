@@ -1,0 +1,150 @@
+.about-us {
+  padding-top: 200px;
+
+  h2 {
+    @include reset;
+    @include font(41, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    width: 110px;
+  }
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.about-us__info {
+  h3 {
+    @include reset;
+    @include font(35, 60);
+    font-family: $intro-script;
+    font-weight: normal;
+  }
+}
+
+.about-us__confectioner {
+  padding-bottom: 2px;
+  display: block;
+}
+
+.about-us__confectioner-info {
+  @include reset;
+  @include font(18, 24);
+  width: 554px;
+  padding-bottom: 18px;
+}
+
+.about-us__ingredient {
+  padding-bottom: 5px;
+  display: block;
+}
+
+.about-us__ingredient-info {
+  @include reset;
+  @include font(18, 24);
+  width: 527px;
+  padding-bottom: 24px;
+}
+
+.about-us__social {
+  position: relative;
+}
+
+.about-us__social-list {
+  @include reset-ul;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__social-item {
+  position: relative;
+  width: 32px;
+
+  &::after {
+    @include pseudo-elem;
+    top: -3px;
+    left: -1px;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &--ig {
+    padding-top: 5px;
+    padding-left: 6px;
+  }
+
+  &--vk {
+    padding-top: 4px;
+
+    &::after {
+      left: -2px;
+    }
+  }
+
+  &--tw {
+    padding-top: 5px;
+    padding-left: 8px;
+
+    &::after {
+      left: 2px;
+    }
+  }
+}
+
+.about-us__image {
+  width: 509px;
+  height: 510px;
+  background-image: url("../img/about-us-desktop.png");
+  background-size: 509px 510px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  top: -75px;
+  left: 85px;
+}
+
+.about-us__block-quote {
+  align-self: center;
+  width: 620px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.about-us__quotes {
+  width: 60px;
+  height: 40px;
+  margin: auto;
+  background-image: url("../img/quotes-desktop@1x.png");
+  background-size: 60px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 37px;
+}
+
+.about-us__quote {
+  @include font(22, 37);
+  font-family: $playfair-bold-italic;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-us__signature {
+  width: 149px;
+  height: 73px;
+  margin: auto;
+  background-image: url("../img/about-us-signature-desktop@1x.png");
+  background-size: 149px 73px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

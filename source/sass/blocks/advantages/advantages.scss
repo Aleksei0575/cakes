@@ -1,0 +1,118 @@
+.advantages {
+  padding-top: 124px;
+
+  h2 {
+    @include reset;
+    @include font(41, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    width: 427px;
+    margin: auto;
+    padding-bottom: 17px;
+  }
+
+  & > p {
+    @include font(35, 40);
+    margin: 0 auto;
+    width: 335px;
+    padding-bottom: 46px;
+    font-family: $intro-script;
+  }
+}
+
+.advantages__block-top {
+  display: flex;
+  height: 540px;
+}
+
+.advantages__ingredients-img {
+  width: 560px;
+  height: 760px;
+  position: relative;
+  top: -257px;
+  background-image:
+          url("../img/advantages-img5-desktop.png"),
+          url("../img/advantages-img1-desktop.png"),
+          url("../img/advantages-img2-desktop.png"),
+          url("../img/advantages-img3-desktop.png"),
+          url("../img/advantages-img4-desktop.png");
+  background-size: 507px 547px, 53px 54px, 103px 148px, 51px 48px, 167px 132px;
+  background-position: left 0 top 177px, left 0 top 190px, left 85px top 92px, left 304px top 115px, left 391px bottom -1px;
+  background-repeat: no-repeat;
+}
+
+.advantages__ingredients-info {
+  padding-top: 81px;
+  padding-left: 139px;
+}
+
+.advantages__additive,
+.advantages__fresh {
+  line-height: 28px;
+}
+
+.advantages__ingredients {
+  @include reset;
+  width: 384px;
+  position: relative;
+  padding-bottom: 36px;
+
+  &::before {
+    @include pseudo-elem;
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/icon-eco.svg");
+    background-size: 63px 63px;
+    background-position: top 0 left 0;
+    background-repeat: no-repeat;
+    top: -17px;
+    left: -80px;
+  }
+}
+
+.advantages__time {
+  @include reset;
+  width: 300px;
+}
+
+.advantages__block-bottom {
+  height: 434px;
+  padding-left: 73px;
+  padding-top: 138px;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    @include reset;
+    @include font(40, 35);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+}
+
+.advantages__important {
+  @include font(35, 70);
+  //padding-bottom: 46px;
+  font-family: $intro-script;
+}
+
+.advantages__perfect {
+  @include reset;
+  width: 442px;
+}
+
+.advantages__care-img {
+  width: 769px;
+  height: 859px;
+  position: relative;
+  top: -342px;
+  background-image:
+          url("../img/advantages-img6-desktop.png"),
+          url("../img/plate-desktop.png"),
+          url("../img/advantages-bg-desktop.png");
+  background-size: 590px 577px, 649px 651px, 768px 802px;
+  background-position: right 47px bottom 176px, right 27px bottom 132px, right 0 bottom 53px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

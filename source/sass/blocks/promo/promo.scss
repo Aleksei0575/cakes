@@ -1,0 +1,97 @@
+.promo {
+  margin-top: -15px;
+  min-height: 941px;
+  background-image:
+    url("../img/promo-cake-desktop@1x.png"),
+    url("../img/promo-barry1-desktop@1x.png"),
+    url("../img/promo-barry2-desktop@1x.png"),
+    url("../img/promo-barry3-desktop@1x.png");
+  background-size: 769px 941px, 111px 110px, 63px 60px, 168px 119px;
+  background-position: right 0 top 23px, left 561px top 44px, left 524px top 228px, left 358px top 390px;
+  background-repeat: no-repeat;
+
+  //@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //  background-image: url("../img/img-description-desktop@2x.jpg");
+  //}
+}
+
+.promo__content {
+  padding-top: 92px;
+
+  h2 {
+    @include font(79, 70);
+    width: 369px;
+    font-family: $playfair-bold;
+    font-weight: bold;
+  }
+}
+
+.promo__description {
+  @include font(41, 77);
+  margin: 0;
+  margin-top: -62px;
+  padding-bottom: 42px;
+  font-family: $intro-script;
+}
+
+.promo__button {
+  @include font(12, 26);
+  margin-bottom: 127px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 66px;
+  padding-right: 66px;
+  min-width: 92px;
+
+  color: $white;
+  background-color: $dark-pink;
+  border-radius: 50px;
+
+
+  &:hover {
+    box-shadow: 0 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+  }
+}
+
+.promo__specification {
+  display: flex;
+}
+
+.promo__specification-ingredients {
+  margin: 0;
+  padding-right: 70px;
+  width: 149px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    @include font(14, 18);
+    width: 82px;
+    padding-top: 11px;
+  }
+}
+
+.promo__specification-delivery {
+  margin: 0;
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    fill: $dark-pink;
+    height: 54px;
+  }
+
+  span {
+    @include font(14, 18);
+    width: 175px;
+    padding-top: 11px;
+  }
+}

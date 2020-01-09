@@ -1,0 +1,101 @@
+.buy {
+  padding-top: 25px;
+  width: 100%;
+  height: 678px;
+  background-color: $light-red;
+  background-image:
+          url("../img/buy-card-desktop.png"),
+          url("../img/buy-bg-desktop.jpg");
+  background-size: 128px 128px, cover;
+  background-position: left 441px top 216px, left 0 top 0;
+  background-repeat: no-repeat;
+}
+
+.buy__wrapper {
+  width: 485px;
+  padding-top: 82px;
+  margin-left: auto;
+  margin-right: 73px;
+
+  h2 {
+    @include reset;
+    @include font(41, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    color: $white;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.buy__list {
+  @include reset-ul;
+  list-style: none;
+  counter-reset: myNum;
+
+  li {
+    position: relative;
+
+    &::before {
+      counter-increment: myNum;
+      content: counter(myNum);
+
+      color: $white;
+      @include font(64, 50);
+      font-family: $playfair-bold;
+      font-weight: bold;
+      position: absolute;
+    }
+  }
+
+  b {
+    @include font(21, 27);
+    color: $white;
+    display: block;
+    padding-left: 61px;
+    padding-bottom: 5px;
+  }
+
+  p {
+    padding-left: 61px;
+    color: $white;
+  }
+}
+
+.buy__item-term {
+  &::before {
+    left: 17px;
+    top: -10px;
+  }
+}
+
+.buy__item-delivery {
+  &::before {
+    left: 10px;
+    top: -12px;
+  }
+}
+
+.buy__item-out {
+  &::before {
+    left: 10px;
+    top: -14px;
+  }
+}
+
+.buy__term-info {
+  @include reset;
+  width: 367px;
+  padding-bottom: 30px;
+}
+
+.buy__delivery-info {
+  @include reset;
+  width: 433px;
+  padding-bottom: 27px;
+}
+
+.buy__out-info {
+  @include reset;
+  width: 430px;
+}

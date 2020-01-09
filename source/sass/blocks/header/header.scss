@@ -1,0 +1,53 @@
+.header {
+  padding-top: 56px;
+  //padding-bottom: 44px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.header__logo {
+  @include font(23, 32);
+  font-family: $playfair-bold;
+  font-weight: bold;
+
+  padding-right: 43px;
+}
+
+.header__navigation {
+  width: 746px;
+}
+
+.header__navigation-list {
+  @include reset-ul;
+  @include font(13, 32);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $dark-pink;
+    }
+  }
+}
+
+.header__phone {
+  @include reset;
+  margin-left: auto;
+
+  span {
+    @include font(15, 39);
+    font-weight: bold;
+    color: $black;
+
+    &:hover {
+      color: $dark-pink;
+    }
+  }
+}

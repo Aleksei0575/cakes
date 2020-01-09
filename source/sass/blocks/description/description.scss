@@ -1,0 +1,240 @@
+.description {
+  margin-top: -48px;
+
+  h2 {
+    @include reset;
+    @include font(38, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    padding-bottom: 52px;
+  }
+}
+
+.description__list {
+  @include reset-ul;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description__link {
+  color: $black;
+}
+
+.description__item-classic {
+  margin-right: 40px;
+  width: 695px;
+  min-height: 672px;
+  background-image: url("../img/description-classic@1x.png");
+  background-size: 716px 672px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 38px;
+  padding-left: 43px;
+  padding-bottom: 31px;
+  box-sizing: border-box;
+  position: relative;
+
+  h3 {
+    @include reset-ul;
+    @include font(24, 27);
+  }
+
+  span {
+    color: #b3b1b1;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+  }
+
+  .description__button {
+    position: absolute;
+    bottom: 52px;
+    right: 71px;
+
+    span {
+      padding-right: 19px;
+      color: #2d2829;
+    }
+  }
+}
+
+.description__item-right {
+  .description__item-top {
+    margin-bottom: 25px;
+    width: 485px;
+    min-height: 323px;
+    background-image: url("../img/description-mousse@1x.png");
+    background-size: 502px 323px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+    padding-left: 50px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+    position: relative;
+
+    h3 {
+      @include reset-ul;
+      @include font(24, 27);
+    }
+
+    span {
+      color: #b3b1b1;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+
+    .description__button {
+      position: absolute;
+      bottom: 49px;
+      right: 67px;
+    }
+  }
+
+  .description__item-bottom {
+    width: 485px;
+    min-height: 323px;
+    background-image: url("../img/description-marriage@1x.png");
+    background-size: 502px 323px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+    padding-left: 50px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+    position: relative;
+
+    h3 {
+      @include reset-ul;
+      @include font(24, 27);
+    }
+
+    span {
+      color: #b3b1b1;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+
+    .description__button {
+      position: absolute;
+      bottom: 49px;
+      right: 67px;
+    }
+  }
+}
+
+.description__item-left {
+  margin-top: 25px;
+  margin-right: 40px;
+
+  .description__item-top {
+    margin-bottom: 25px;
+    width: 485px;
+    min-height: 323px;
+    background-image: url("../img/description-man@1x.png");
+    background-size: 502px 323px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+    padding-left: 45px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+    position: relative;
+
+    h3 {
+      @include reset-ul;
+      @include font(24, 27);
+    }
+
+    span {
+      color: #b3b1b1;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+
+    .description__button {
+      position: absolute;
+      bottom: 49px;
+      right: 67px;
+    }
+  }
+
+  .description__item-bottom {
+    width: 485px;
+    min-height: 323px;
+    background-image: url("../img/description-woman@1x.png");
+    background-size: 502px 323px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+    padding-left: 45px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+    position: relative;
+
+    h3 {
+      @include reset-ul;
+      @include font(24, 27);
+    }
+
+    span {
+      color: #b3b1b1;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+
+    .description__button {
+      position: absolute;
+      bottom: 49px;
+      right: 67px;
+    }
+  }
+}
+
+.description__item-children {
+  margin-top: 25px;
+  width: 695px;
+  min-height: 672px;
+  background-image: url("../img/description-children@1x.png");
+  background-size: 716px 672px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 38px;
+  padding-left: 43px;
+  padding-bottom: 31px;
+  box-sizing: border-box;
+  position: relative;
+
+  h3 {
+    @include reset-ul;
+    @include font(24, 27);
+  }
+
+  span {
+    color: #b3b1b1;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+  }
+
+  .description__button {
+    position: absolute;
+    bottom: 52px;
+    right: 71px;
+
+    span {
+      padding-right: 19px;
+      color: #2d2829;
+    }
+  }
+}

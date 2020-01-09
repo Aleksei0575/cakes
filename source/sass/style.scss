@@ -4,19 +4,15 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
+
 @import "blocks/container/container.scss";
-@import "blocks/page-header/page-header.scss";
-@import "blocks/social/social.scss";
+@import "blocks/header/header.scss";
+@import "blocks/promo/promo.scss";
 @import "blocks/description/description.scss";
-@import "blocks/subscription/subscription.scss";
-@import "blocks/banner/banner.scss";
-@import "blocks/trainers/trainers.scss";
-@import "blocks/slider/slider.scss";
-@import "blocks/advantages/advantages.scss";
-@import "blocks/stocks/stocks.scss";
-@import "blocks/reviews/reviews.scss";
-@import "blocks/contact/contact.scss";
-@import "blocks/feedback/feedback.scss";
+@import "blocks/order/order.scss";
 @import "blocks/form/form.scss";
-@import "blocks/contacts/contacts.scss";
+@import "blocks/reviews/reviews.scss";
+@import "blocks/about-us/about-us.scss";
+@import "blocks/advantages/advantages.scss";
+@import "blocks/buy/buy.scss";
 @import "blocks/footer/footer.scss";

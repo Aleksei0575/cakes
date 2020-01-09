@@ -1,10 +1,10 @@
 // Цвета на странице
 $white: #ffffff;
 $black: #000000;
-$dark-blue: #030a1a;
-$blue: #102654;
-$light-gray: #f8f9fc;
-$light-red: #ed0233;
+$light-pink: #fbebea;
+$dark-pink: #f50049;
+$light-gray: #e8e8e8;
+$light-red: #dc2c37;
 
 // Размеры для разных экранов
 $desktop-width: 1024px;
@@ -12,15 +12,17 @@ $tablet-width: 1023px;
 $mobile-width: 767px;
 
 // Отступы для разных экранов
-$mobile-padding: 15px;
-$tablet-padding: 45px;
-$desktop-padding: 103px;
+$mobile-padding: 20px;
+$tablet-padding: 20px;
+$desktop-padding: 73px;
 
 // Для ретиновых дисплеев
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 // Шрифты
-$bebas-neue: "Bebas Neue", "Arial", sans-serif;
-$bebasneue-bold: "Bebas Neue Bold", "Arial", sans-serif;
-$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$circe-bold: "Circe Bold", "Arial", sans-serif;
+$circe: "Circe", "Arial", sans-serif;
+$playfair-bold-italic: "Playfair Display Italic", "Georgia", serif;
+$playfair-bold: "Playfair Display", "Georgia", serif;
+$intro-script: "Intro Script R H2 Base", "Comic Sans MS", cursive, sans-serif;

@@ -1,17 +1,18 @@
 body {
   min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  //min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
 
-  font-family: $roboto-condensed;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: $circe;
+  font-size: 20px;
+  line-height: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
 
-  color: $blue;
+  color: $black;
+  background-color: $light-pink;
 }
 
 a {
