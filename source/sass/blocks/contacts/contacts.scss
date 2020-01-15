@@ -1,0 +1,191 @@
+.contacts {
+  padding-top: 62px;
+  padding-bottom: 297px;
+
+  background-image:
+          url("../img/contacts-bg-desktop@1x.png");
+  background-size: 886px 636px;
+  background-position: bottom 0 right 0;
+  background-repeat: no-repeat;
+
+  h2 {
+    @include reset;
+    @include font(41, 65);
+    font-family: $playfair-bold;
+    font-weight: bold;
+    padding-bottom: 22px;
+  }
+}
+
+.contacts__question {
+  @include reset;
+  @include font(35, 40);
+  padding-bottom: 15px;
+  font-family: $intro-script;
+}
+
+.contacts__write-in {
+  @include reset;
+  @include font(20, 24);
+  padding-bottom: 35px;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts-form {
+  width: 550px;
+  padding-right: 80px;
+
+  button {
+    display: inline-block;
+
+    @include font(19, 26);
+    text-align: center;
+    //letter-spacing: 0.05em;
+    //text-transform: uppercase;
+
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 44px;
+    padding-right: 44px;
+    min-width: 120px;
+
+    color: $white;
+    background-color: $dark-pink;
+    border: none;
+    border-radius: 50px;
+
+    &:hover {
+      box-shadow: 0 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+    }
+  }
+}
+
+.contacts-form__item input[type="text"],
+.contacts-form__item input[type="email"] {
+  @include font(14, 22);
+  width: 550px;
+  padding-top: 10px;
+  //padding-bottom: 2px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #e7caca;
+
+  &::-webkit-input-placeholder {
+    color: $black;
+    opacity: 0.4;
+  }
+
+  &::-moz-placeholder {
+    color: $black;
+  }
+
+  &:-ms-input-placeholder {
+    color: $black;
+  }
+
+  &:hover {
+    border-color: rgba($dark-pink, 0.5);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: $dark-pink;
+    outline: none;
+  }
+}
+
+.contacts-form__name {
+  padding-bottom: 26px;
+}
+
+.contacts-form__email {
+  padding-bottom: 26px;
+}
+
+.contacts-form__question {
+  padding-bottom: 79px;
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+}
+
+.contacts__phone-info {
+  @include reset;
+  padding-bottom: 25px;
+
+  span {
+    display: block;
+
+    a {
+      color: $black;
+    }
+
+    &:hover {
+      a {
+        color: $dark-pink;
+      }
+    }
+  }
+}
+
+.contacts__email {
+  @include reset;
+  padding-bottom: 5px;
+
+  span {
+    //display: inline-block;
+
+    a {
+      color: $black;
+    }
+
+    &:hover {
+      a {
+        color: $dark-pink;
+      }
+    }
+  }
+}
+
+.contacts__social-list {
+  @include reset-ul;
+  width: 156px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__social-item {
+  position: relative;
+  width: 65px;
+
+  &::after {
+    @include pseudo-elem;
+    top: 0;
+    left: 0;
+    width: 63px;
+    height: 63px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &--ig {
+    padding-top: 17px;
+    padding-left: 17px;
+  }
+
+  &--vk {
+    padding-top: 14px;
+    padding-left: 8px;
+  }
+}
+

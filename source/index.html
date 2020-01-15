@@ -429,7 +429,7 @@
       <!--Блок преимуществ-->
       <section class="advantages">
         <h2>Наши преимущества</h2>
-        <p>Почему нас выбирают ?</p>
+        <p>Почему нас выбирают?</p>
         <div class="advantages__block-top">
           <div class="advantages__ingredients-img"></div>
           <div class="advantages__ingredients-info">
@@ -469,6 +469,59 @@
           </ol>
         </div>
       </article>
+
+      <!--Блок контактов-->
+      <section class="contacts container">
+        <h2>Контакты</h2>
+        <p class="contacts__question">Остались вопросы?</p>
+        <p class="contacts__write-in">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+        <div class="contacts__wrapper">
+            <div class="contacts__form contacts-form">
+                <form action="#" method="post">
+                    <div class="contacts-form__wrapper">
+                        <div class="contacts-form__item contacts-form__name">
+                            <label class="visually-hidden" for="name">Имя</label>
+                            <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="contacts-form__item contacts-form__email">
+                            <label class="visually-hidden" for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Email  адрес" required>
+                        </div>
+                        <div class="contacts-form__item contacts-form__question">
+                            <label class="visually-hidden" for="question">Оформление</label>
+                            <input id="question" type="text" name="question" placeholder="Ваш вопрос" required>
+                        </div>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="contacts__block">
+                <p class="contacts__phone-info">Или позвоните по телефону:
+                    <span><a href="tel:+79068999296">+7 906 899 92 96</a></span>
+                </p>
+                <p class="contacts__email">Наша почта :
+                    <span><a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></span>
+                </p>
+                <p class="contacts__social">Мы в соц. сетях:</p>
+                <ul class="contacts__social-list">
+                    <li class="contacts__social-item contacts__social-item--ig">
+                        <a href="https://www.instagram.com/" class="contacts__social-link">
+                            <svg class="contacts__social-icon contacts__social-icon--ig" x="0px" y="0px" width="28px" height="28px">
+                                <use xlink:href="#icon-inst-big"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="contacts__social-item contacts__social-item--vk">
+                        <a href="https://www.vk.com/" class="contacts__social-link">
+                            <svg class="contacts__social-icon contacts__social-icon--vk" x="0px" y="0px" width="41px" height="29px">
+                                <use xlink:href="#icon-vk-big"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
     </main>
 
     <!-- Футер -->
